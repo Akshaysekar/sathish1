@@ -16,7 +16,7 @@ public static void main(String[] args) throws InterruptedException, AWTException
 		WebDriver driver = new ChromeDriver();
 		 driver.get("http://demo.automationtesting.in/Alerts.html");
 		 driver.manage().window().maximize();
-		 
+		
 	//simple
 	 WebElement simpleInsertion = driver.findElement(By.xpath("//button[@class='btn btn-danger']"));
 	 simpleInsertion.click();
@@ -51,6 +51,7 @@ public static void main(String[] args) throws InterruptedException, AWTException
 	 promptAlert.sendKeys("Akshyx");
 	 promptAlert.accept();
 	 
+	 driver.close();
 	 
 	 
 	 
